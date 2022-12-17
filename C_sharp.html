@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+</ruby>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Julius Ziesmann" content="juZIus">
+    <link rel="shortcut icon" type="image/x-icon" href="images\LG 3.ico"> 
+    <link rel="apple-touch-icon" sizes="128x128" href="images\LG 3.ico"> 
+    <link rel="shortcut icon" sizes="128x128" href="images\LG 3.ico">
+    <link rel="stylesheet" href="scripts\index_mob.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>juZIus</title>
+
+    <style>
+    </style>
+    
+</head>
+<body>
+    <div class="menu">
+        <a class="menu-offnen" href="#"></a>
+		<div class="menu-schirm">
+			<a class="menu-schlissen" href="#"></a>
+			<ul>
+				<li><a href="java.html">Java</a></li><br>
+				<li><a href="it\aufgaben.html">Site</a></li><br>
+				<li><a href="author.html">Über Autor</a></li><br>
+				<li><a href= "blog.html" >Blog</a></li><br>
+			</ul>						
+		</div> 
+		 
+    </div>
+    <div class="logo">
+        <a class="scale" style="float:left; margin-top:2px; margin-right:40px;"><img src="images\LOGO4.jpg" width="120" height="55"></a>
+    </div>
+    <div class="home">
+        <a href="index.html" style="float:left; margin-top:2px; margin-right:5px;"><img src="images\home-48.png" width="48" height="48"></a>
+    </div>
+    <div class = "menu2">
+        <div>
+            <div> 
+                <div>
+                    <div>
+                        <br>
+                        <br>
+                        <br>
+                        Diese Lösung zur Konvertierung von Zahlen von einem Zahlensystem in ein anderes habe ich mit C# geschrieben.<br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="horizontal-center">
+                        <img class="image" src="images\FOTO PROJEKTE\Zahlconverter\Converter1.jpg"  width="306" height="216">
+                        <img class="image" src="images\FOTO PROJEKTE\Zahlconverter\Converter2.jpg"  width="306" height="216">
+                        <img class="image" src="images\FOTO PROJEKTE\Zahlconverter\Converter3.jpg"  width="306" height="216">
+                        <img class="image" src="images\FOTO PROJEKTE\Zahlconverter\Converter4.jpg"  width="306" height="216">
+                    </div><br><br>
+        
+                </div>
+            <div>
+                Release Version: RechnerJZ - 01.12   Portable für Windows x-86<br><br>
+                <a href="Programm\RechnerJZ_Portable_x86.7z" download="">
+                    <div class="container">
+                        <div class="horizontal-center">
+                            <button class="btn" style="width: 30%"><i class="fa fa-download"></i> LADEN</button>
+                        </div>
+                    </div>
+                    
+                </a><br><br>
+                
+            </div>
+            <div>
+                Dieses auf C# basierende Projekt demonstriert, wie der Eignungstest für IT der Agentur für Arbeit funktioniert<br><br>
+                Mit Hilfe dieses Programms können Sie nachvollziehen, wie das Eignungstest Agentur für Arbeit verläuft und welche Fragen gestellt werden können. <br>
+                Der Test besteht aus 50 Fragen, die verschiedene Bereiche abdecken. Darunter Allgemeinwissen, Mathematik, Logik und Informatik.<br><br>
+                Der Zeitansatz für diese Prüfung beträgt 45 Minuten.
+                <br>
+                <br>
+                <div class="horizontal-center">
+                    <img class="image" src="images\FOTO PROJEKTE\Eignungstest\Eignungstest1.jpg"  width="306" height="216">
+                    <img class="image" src="images\FOTO PROJEKTE\Eignungstest\Eignungstest 2.jpg"  width="306" height="216">  
+                    <img class="image" src="images\FOTO PROJEKTE\Eignungstest\Eignungstest 3.jpg"  width="306" height="216">
+                    <img class="image" src="images\FOTO PROJEKTE\Eignungstest\Eignungstest 4.jpg"  width="306" height="216">
+                    <img class="image" src="images\FOTO PROJEKTE\Eignungstest\Eignungstest 6.jpg"  width="306" height="216">
+                </div>
+            </div><br><br>
+        </div>
+    </div>
+    <div>
+        <div>
+            Release Version Datei wird später freigegeben<br><br>
+            <a href="" download="">
+                <div class="container">
+                    <div class="horizontal-center">
+                        <button class="btn2" style="width: 30%" ><i class="fa fa-download"></i> LADEN</button>
+                    </div>
+                </div>
+            </a><br><br>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer"><br>
+			<a href= "impressum.html">IMPRESSUM</a><br><br><a href= "datenschutz.html" >DATENSCHUTZ</a><br><br>
+			<a href = "C_sharp.html">Zum Anfang<br><br><img src="images\LOGO4.jpg" width="120" height="40"></a><br><br>
+			<a href = "https://github.com/diplocentrus"><img src="images\igithub.png" width="48" height="48"></a><br><br>
+			<a href = "https://www.facebook.com/JuliusZiesmann"><img src="images\facebook.png" width="48" height="48"></a><br><br>
+			<a>juZIus © 2022</a><br><br>
+        </div>
+    </footer> 
+</body>
+<script src="scripts\jquery.js"></script>
+<script>
+		$(function() { 
+	var $menu_schirm = $('.menu-schirm');
+
+	$(".menu-offnen").click(function(){
+		$('body').addClass('body_pointer');		
+		$menu_schirm.show(0);
+		$menu_schirm.animate(
+			{right: parseInt($menu_schirm.css('left'),10) == 0 ? -$menu_schirm.outerWidth() : 0}, 
+			300
+		);
+		return false;
+	});	
+	
+	$(".menu-schlissen").click(function(){
+		$('body').removeClass('body_pointer');		
+		$menu_schirm.animate(
+			{right: parseInt($menu_schirm.css('right'),10) == 0 ? -$menu_schirm.outerWidth() : 0}, 
+			300, 
+			function(){
+				$menu_schirm.hide(0);
+			}
+		);
+		return false;
+	});	
+	
+	$(document).on('click', function(e){
+		if (!$(e.target).closest('.menu-schirm').length){
+			$('body').removeClass('body_pointer');
+			$menu_schirm.animate(
+				{right: parseInt($menu_schirm.css('right'),10) == 0 ? -$menu_schirm.outerWidth() : 0}, 
+				300, 
+				function(){
+					$menu_schirm.hide(0);
+				}
+			);
+		}
+	});
+});
+</script>
+</html>

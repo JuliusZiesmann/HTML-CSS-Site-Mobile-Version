@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+</ruby>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Julius Ziesmann" content="juZIus">
+    <link rel="shortcut icon" type="image/x-icon" href="images\LG 3.ico"> 
+    <link rel="apple-touch-icon" sizes="128x128" href="images\LG 3.ico"> 
+    <link rel="shortcut icon" sizes="128x128" href="images\LG 3.ico">
+    <link rel="stylesheet" href="scripts\index_mob.css">
+	<title>juZIus</title>
+    <style></style>
+</head>
+<body>
+    <div class="menu">
+        <a class="menu-offnen" href="#"></a>
+		<div class="menu-schirm">
+			<a class="menu-schlissen" href="#"></a>
+			<ul><br>
+				<li><a href="C_sharp.html">C#</a></li><br>
+				<li><a href="java.html">Java</a></li><br>
+				<li><a href="it\aufgaben.html">Site</a></li><br>
+				<li><a href="author.html">Über Autor</a></li><br>
+				<li><a href= "blog.html" >Blog</a></li><br>
+			</ul>						
+		</div> 
+		 
+    </div>
+    <div class="logo">
+        <a class="scale" style="float:left; margin-top:2px; margin-right:40px;"><img src="images\LOGO4.jpg" width="120" height="55"></a>
+    </div>
+    <div class="menu2"> 
+        <p1>
+            <br><br><br>
+            Hallo und herzlich Willkommen zu meinem Internetauftritt,<br><br>
+            ich bin angehender Fachinformatiker (bist ja noch in der Umschulung) und 
+            veröffentliche hier auf dieser Seite Artikel zum Thema Anwendungsentwicklung. 
+            Derzeit beschäftige ich mich mit den Programmiersprachen Java und C#.<br>
+            <br>
+        </p1>
+		<div class="horizontal-center">
+			<img src="images\Screenshot 2022-10-13 210916.jpg" width="330" height="200">
+		</div>
+    </div>
+
+    <footer>
+        <div class="footer"><br>
+			<a href= "impressum.html">IMPRESSUM</a><br><br><a href= "datenschutz.html" >DATENSCHUTZ</a><br><br>
+			<a href = "index.html"><img src="images\LOGO4.jpg" width="120" height="40"></a><br><br>
+			<a href = "https://github.com/diplocentrus"><img src="images\igithub.png" width="48" height="48"></a><br><br>
+			<a href = "https://www.facebook.com/JuliusZiesmann"><img src="images\facebook.png" width="48" height="48"></a><br><br>
+			<a>juZIus © 2022</a><br><br>
+        </div>
+    </footer> 
+</body>
+<script src="scripts\jquery.js"></script>
+<script>
+		$(function() { 
+	var $menu_schirm = $('.menu-schirm');
+
+	$(".menu-offnen").click(function(){
+		$('body').addClass('body_pointer');		
+		$menu_schirm.show(0);
+		$menu_schirm.animate(
+			{right: parseInt($menu_schirm.css('left'),10) == 0 ? -$menu_schirm.outerWidth() : 0}, 
+			300
+		);
+		return false;
+	});	
+	
+	$(".menu-schlissen").click(function(){
+		$('body').removeClass('body_pointer');		
+		$menu_schirm.animate(
+			{right: parseInt($menu_schirm.css('right'),10) == 0 ? -$menu_schirm.outerWidth() : 0}, 
+			300, 
+			function(){
+				$menu_schirm.hide(0);
+			}
+		);
+		return false;
+	});	
+	
+	$(document).on('click', function(e){
+		if (!$(e.target).closest('.menu-schirm').length){
+			$('body').removeClass('body_pointer');
+			$menu_schirm.animate(
+				{right: parseInt($menu_schirm.css('right'),10) == 0 ? -$menu_schirm.outerWidth() : 0}, 
+				300, 
+				function(){
+					$menu_schirm.hide(0);
+				}
+			);
+		}
+	});
+});
+</script>
+</html>
